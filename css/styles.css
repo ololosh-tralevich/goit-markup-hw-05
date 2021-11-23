@@ -361,7 +361,10 @@ h3 {
 
 /* modal window */
 .is-hidden {
-  display: none;
+  visibility: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in-out;
 }
 
 .backdrop {
@@ -371,6 +374,7 @@ h3 {
   height: 100%;
   position: fixed;
   z-index: 999;
+  transition: opacity 200ms cubic-bezier(.1,.89,.13,.94);
 }
 
 .modal {
@@ -378,6 +382,7 @@ h3 {
   width: 528px;
   height: 581px;
   position: absolute;
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -399,6 +404,9 @@ h3 {
   cursor: pointer;
 }
 
+  .modal-text {
+    margin-top: 200px;
+  }
 
 
 /* what we do section */
