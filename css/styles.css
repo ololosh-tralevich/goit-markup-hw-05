@@ -17,6 +17,7 @@
   --footer-icons-color: rgba(255, 255, 255, 0.1);
   --background-modal-color: rgba(0, 0, 0, 0.2);
   --border-close-modal-button-color: rgba(0, 0, 0, 0.1);
+  --backgrd-what-we-do-soaring: rgba(47, 48, 58, 0.8);
 }
 
 *,
@@ -429,7 +430,26 @@ h3 {
 
 .what-we-do-img {
   margin-right: 30px;
+  position: relative;
 }
+
+.what-we-do-img > .what-we-do-soaring {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--backgrd-what-we-do-soaring);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 27px 0;
+  width: 370px;
+}
+
 
 /* our team section */
 .our-team {
@@ -474,7 +494,7 @@ h3 {
 
 .team-member-profession {
   color: var(--grey-color);
-  margin: 10px 0 0 0;
+  margin: 10px 0 16px 0;
   font-weight: normal;
 }
 .icon-flex {
